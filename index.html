@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forks&Flavors Restaurant</title>
+
+    <!-- Stylesheet links -->
+    <!-- Custom CSS for site-specific styles -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Bootstrap CSS framework for responsive design -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons for UI elements -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <!-- Navigation Bar - Fixed at top -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Restaurant Logo -->
+        <a class="navbar-brand" href="/">
+          <img src="/public/images/logo.png" alt="Forks&Flavors Restaurant Logo">
+        </a>
+        <!-- Mobile Navigation Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/reviews.html">Reviews</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section with Dynamic Slideshow -->
+      <section class="hero">
+        <!-- Slideshow Container -->
+        <div class="slideshow">
+          <!-- Individual Slides with Background Images -->
+          <div class="slide active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/images/slider1.jpg')"></div>
+          <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/images/slider2.jpg')"></div>
+          <div class="slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/images/slider3.jpg')"></div>
+        </div>
+        <!-- Hero Content Overlay -->
+        <div class="container text-center hero-content">
+          <h1>Welcome to Forks&Flavors</h1>
+          <p>Experience the finest dining in town</p>
+          <!-- Custom Styled Button with Icon -->
+          <a href="/menu.html" class="hero-btn">
+            <span>View Menu</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Most Popular Dishes Section -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4 fade-in">Most Popular Dishes</h2>
+          <div class="row">
+            <!-- Popular Dish Cards with Animation -->
+            <div class="col-md-4 mb-4">
+              <div class="card popular-dish h-100 card-animate">
+                <img src="/public/images/mercimek.jpg" class="card-img-top" alt="Mercimek Çorbası">
+                <div class="card-body">
+                  <h5 class="card-title">Lentil Soup</h5>
+                  <p class="card-text">Classic Turkish soup served hot with a slice of lemon on the side.</p>
+                  <p class="card-price">€4.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card popular-dish h-100 card-animate">
+                <img src="/public/images/karniyarik.jpg" class="card-img-top" alt="Karnıyarık">
+                <div class="card-body">
+                  <h5 class="card-title">Stuffed Eggplant (Karnıyarık)</h5>
+                  <p class="card-text">Eggplant filled with minced meat, onions, and spices, baked to perfection.</p>
+                  <p class="card-price">€12.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card popular-dish h-100 card-animate">
+                <img src="/public/images/baklava.jpg" class="card-img-top" alt="Baklava">
+                <div class="card-body">
+                  <h5 class="card-title">Baklava</h5>
+                  <p class="card-text">Layers of flaky pastry filled with pistachios and sweetened with syrup.</p>
+                  <p class="card-price">€6.50</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section with Features -->
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-4 fade-in">Why Choose Us</h2>
+          <div class="row text-center">
+            <!-- Feature Boxes with Icons -->
+            <div class="col-md-4 mb-4">
+              <div class="feature-box fade-in">
+                <i class="bi bi-stars fs-1 mb-3 text-primary"></i>
+                <h4>Authentic Turkish Cuisine</h4>
+                <p>Experience genuine Turkish flavors with our traditional recipes and cooking methods passed down through generations.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="feature-box fade-in">
+                <i class="bi bi-house-heart fs-1 mb-3 text-primary"></i>
+                <h4>Turkish Hospitality</h4>
+                <p>Enjoy the warmth of Turkish hospitality in a cozy atmosphere that makes you feel like you're dining in Istanbul.</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="feature-box fade-in">
+                <i class="bi bi-bag-check fs-1 mb-3 text-primary"></i>
+                <h4>Premium Ingredients</h4>
+                <p>We import authentic Turkish spices and combine them with fresh local ingredients for the perfect blend of flavors.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Reviews Section -->
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4 fade-in">What Our Customers Say</h2>
+          <div class="row">
+            <div class="col-md-6 offset-md-3 fade-in">
+              <!-- Dynamic Review Container -->
+              <div id="latestReview" class="text-center">
+                <!-- Latest review will be inserted here by JavaScript -->
+              </div>
+              <div class="text-center mt-4">
+                <a href="/reviews.html" class="btn btn-outline-primary">Read More Reviews</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Forks&Flavors Restaurant. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Dependencies -->
+    <!-- Custom JavaScript -->
+    <script type="module" src="/src/main.js"></script>
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

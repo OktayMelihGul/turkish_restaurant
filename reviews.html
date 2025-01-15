@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews - Forks&Flavors Restaurant</title>
+
+    <!-- Stylesheet Dependencies -->
+    <!-- Custom CSS for site-specific styles -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <!-- Bootstrap CSS framework for responsive layout -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons for UI elements -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <!-- Navigation Bar - Fixed at top -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Restaurant Logo and Home Link -->
+        <a class="navbar-brand" href="/">
+          <img src="/public/images/logo.png" alt="Forks&Flavors Restaurant Logo">
+        </a>
+        <!-- Mobile Navigation Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Menu Items -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/reviews.html">Reviews</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <!-- mt-5 pt-5 classes add margin and padding to prevent navbar overlap -->
+    <main class="container mt-5 pt-5">
+      <!-- Reviews Section Header with Animation -->
+      <h2 class="text-center mb-4 fade-in">Customer Reviews</h2>
+      <!-- Dynamic Reviews Container -->
+      <!-- This div will be populated with review cards by main.js -->
+      <div class="row" id="reviewsContainer">
+        <!-- Reviews will be dynamically inserted here -->
+        <!-- Each review will be rendered as a Bootstrap card -->
+        <!-- Review cards include: customer name, rating stars, and comment -->
+        <!-- Cards are arranged in a responsive grid layout -->
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 Forks&Flavors Restaurant. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Dependencies -->
+    <!-- Custom JavaScript for dynamic review loading and animations -->
+    <!-- main.js contains the reviews array and rendering logic -->
+    <script type="module" src="/src/main.js"></script>
+    <!-- Bootstrap JavaScript Bundle for responsive components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

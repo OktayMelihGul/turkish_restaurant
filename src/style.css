@@ -1,0 +1,245 @@
+/* ====================================
+   Base Layout Styles
+   ==================================== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* ====================================
+   Hero Section Styles
+   ==================================== */
+.hero {
+  height: 100vh;
+  position: relative;
+  color: white;
+  margin-top: -56px; /* Compensate for fixed navbar height */
+  overflow: hidden;
+}
+
+/* Slideshow Container and Animation */
+.slideshow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Hero Content Positioning */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  max-width: 800px; /* Limit text width for readability */
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 600px; /* Limit text width for readability */
+}
+
+/* ====================================
+   Navigation Bar Styles
+   ==================================== */
+.navbar {
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand img {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+/* Navigation Links */
+.navbar .nav-link {
+  padding: 0.8rem 1.2rem !important;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+}
+
+.navbar .nav-link:hover {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-link.active {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 600;
+}
+
+/* ====================================
+   Card Styles and Animations
+   ==================================== */
+.card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Card Hover Effects */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image Animation */
+.card img {
+  transition: transform 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* Card Title and Price Styles */
+.card-title {
+  transition: color 0.3s ease;
+}
+
+.card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+.card:hover .card-price {
+  color: #1e7e34;
+}
+
+/* ====================================
+   Feature Box Styles
+   ==================================== */
+.feature-box {
+  padding: 2rem;
+  border-radius: 10px;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+/* ====================================
+   Scroll Animation Classes
+   ==================================== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====================================
+   Custom Button Styles
+   ==================================== */
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  min-width: 180px;
+  justify-content: center;
+}
+
+/* Button Hover Effects */
+.hero-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-btn i {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.hero-btn:hover i {
+  transform: translateX(5px);
+}
+
+/* ====================================
+   Map Container Styles
+   ==================================== */
+.map-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  transition: opacity 0.3s ease;
+}
+
+.map-container:hover iframe {
+  opacity: 0.9;
+}
