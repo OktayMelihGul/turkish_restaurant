@@ -87,7 +87,6 @@ Restaurant/
   - Traditional Appetizers (Mezeler)
   - Main Courses
   - Authentic Turkish Desserts
-- Detailed descriptions in English and Turkish
 - High-quality food images
 - Hover animations on cards
 
@@ -109,7 +108,7 @@ Restaurant/
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
+   git clone https://github.com/OktayMelihGul/turkish_restaurant
    cd Restaurant
    ```
 
